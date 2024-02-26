@@ -1,7 +1,7 @@
 import { ethers } from "hardhat";
 
 async function main() {
-  const payrollFactoryContract = "0xa4AbB92BFfB74E022DA1156db0Be2da3384D2Ae0";
+  const payrollFactoryContract = "0x85f71b0b130607C8f400C8FC6b741aC2f01399FB";
   const PAYROLLFACTORY = await ethers.getContractAt(
     "PayrollFactory",
     payrollFactoryContract

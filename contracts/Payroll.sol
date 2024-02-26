@@ -26,7 +26,7 @@ contract Payroll {
         owner = msg.sender;
     }
 
-    function addEmployee(address _account, uint _salary) external {
+    function addEmployee(address _account, uint _salary) external onlyOwner {
         require(_account != address(0), "Invalid address");
         require(
             employees[_account].account == address(0),
